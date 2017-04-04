@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/introjs.min.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/intro.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div style="margin-top:5px" class="row intro">
+                <div data-step="1" data-intro="step1" class="jumbotron">
+                    <h1>簡介Intro.js</h1>
+                    <p>Step-by-step guide and feature introduction</p>
+                </div>
+            </div>              
+            <div class="row">
+                <div class="col-xs-12">
+                    <div data-step="2" data-intro="step2" class="panel panel-default intro">
+                        <div class="panel-body">                                                        
+                            <p>                                
+                                <span class="glyphicon glyphicon-info-sign"></span>為什麼使用intro.js?<br>
+                                <ol>
+                                    <li>方便使用者首次使用網站，提供功能導覽與功能介紹</li>
+                                    <li>聚焦使用者目光，專注於功能與介紹</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-xs-12">
+                    <div data-step="3" data-intro="step3" class="panel panel-default intro">
+                        <div class="panel-body">                                                        
+                            <p>                                          
+                                <span class="glyphicon glyphicon-question-sign"></span>如何使用呢?<br>
+                                最快速的方式引用cdnjs，在<head>處加入：<br>
+                                <ol>
+                                    <li>https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/introjs.min.css</li>
+                                    <li>https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/intro.min.js</li>
+                                </ol>
+                                接著在html tag中加入data-intro屬性，例：<br>
+                                &lt;div data-intro="intro"&gt;&lt;div&gt;<br>
+                                最後在script加入初始化程式<br>
+                                <code>
+                                    &lt;script&gt;
+                                    <p>                                    
+                                        introJs().start();
+                                    </p>                                    
+                                    &lt;/script&gt;
+                                </code>
+                                <button id="demo" class="btn btn-primary">Demo</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <h3><a class="pull-right" href="http://introjs.com/">introjs官網</a></h3>
+            </div>
+        </div>
+        <script>
+            document.querySelector("#demo").addEventListener("click",function(e)
+            {
+                introJs().start();
+            });
+        </script>
+    </body>
+</html>
